@@ -1,4 +1,6 @@
 import java.util.HashMap;
+import java.util.Set;
+import java.util.Iterator;
 /**
  * Write a description of class AgendaTelefonica here.
  * 
@@ -30,5 +32,14 @@ public class AgendaTelefonica
             numero = "El nombre buscado no existe";
         }
         return numero;
+    }
+    
+    /**
+     * Print all keys
+     */
+    public void printAllNames(){
+        Set nombres = agenda.keySet();
+        Iterator iterador = nombres.iterator();
+        System.out.print(nombres);
     }
 }
